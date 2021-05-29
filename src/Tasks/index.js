@@ -5,11 +5,12 @@ const Tasks = ({tasks, hideAllDone}) => (
     <ul className="list">
     {tasks.map(task => ( //key={task.id} add to each element, see in lesson
         <li
-        className={`list__item${task.done & hideAllDone ? " list__item--hide" : ""}`}> 
+        className={`list__item${task.done & hideAllDone ? " list__item--hidden" : ""}`}> 
              <button className="button button__list button__list--done">
                         {task.done ? "✔" : " "}
                     </button>
-                     <span className={`list__span${task.done ? " list__span--done" : ""}`}>
+                     <span className={`list__span${task.done ? " list__span--done" : ""}`}
+                     >
                         {task.content}
                     </span>
                     <button className="button button__list button__list--remove">
