@@ -7,7 +7,8 @@ import Header from "./Header";
 import Container from "./Container";
 
 const tasks = [
-  { id: 1, content: "Transfer task-list to React.js", done: true }, { id: 2, content: "Do groceries", done: false },
+  { id: 1, content: "Transfer task-list to React.js", done: true }, 
+  { id: 2, content: "Do groceries", done: false },
 ];
 
 const hideDoneTasks = false;
