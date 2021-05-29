@@ -7,7 +7,7 @@
 .section__layout {
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 15px;
+    padding: 0 0 0 15px;
     background-color: white;
 }
 
@@ -15,10 +15,6 @@
     .section__layout {
         grid-template-columns: 1fr;
     }
-}
-
-.section__header {
-    background-color: white;
 }
 
 .section__body {
@@ -31,7 +27,6 @@
     grid-template-columns: auto auto;
     grid-gap: 20px;
 }
-
 
 @media (max-width: 767px) {
     .section__buttonsContainer {
