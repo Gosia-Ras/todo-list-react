@@ -23,6 +23,7 @@
     background-color: transparent;
     color: hsl(180, 100%, 25%);
     transition: color 1s;
+    margin: 0 10px 0 0;
 }
 
 .button--section:hover {
