@@ -1,0 +1,17 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__text {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(220, 220, 220);
+}
