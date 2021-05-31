@@ -3,8 +3,9 @@ import "./style.css";
 
 const Tasks = ({tasks, hideDoneTasks}) => (
     <ul className="list">
-    {tasks.map(task => ( //key={task.id} add to each element, see in lesson
+    {tasks.map(task => ( 
         <li
+        key={task.id}
         className={`list__item${task.done & hideDoneTasks ? " list__item--hidden" : ""}`}> 
              <button className="button button__list button__list--done">
                         {task.done ? "✔" : " "}
@@ -16,7 +17,7 @@ const Tasks = ({tasks, hideDoneTasks}) => (
                     <button className="button button__list button__list--remove">
                         🗑
                     </button>
-        </li> //className hidden doesn't get added
+        </li>
     ))}
     </ul>
 );
