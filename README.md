@@ -1,40 +1,39 @@
 # Task List in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple task list moved from vanilla JS into React.js 
+The app now does not have the functionality added. Soon it will be possible use the buttons to: 
+- add tasks
+- mark tasks as done
+- remove tasks from the list
+- mark all tasks as done
+- hide finished tasks.
 
-## Available Scripts
+If any task is entered into the list, two buttons appear: to mark all tasks as done, and to hide all tasks marked as done. 
+If all tasks are marked as complete, the mark all button is disabled.
 
-In the project directory, you can run:
+Project done as a part of front-end development course at YouCode.
+## Demo: 
 
-### `npm start`
+https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tools: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- HTML
+- CSS
+- BEM
+- ES6+
+- Immutability principle
+- Grid 
+- React.js
+- Media query
 
-### `npm test`
+### Instructions: 
+*For now it is not possible to use the buttons to perform those actions.*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Type in the task in the input field.
+2. Click the "click to add" button.
+3. The task will appear in the list below the input field. 
+4. Using the green button the task can be marked as done. 
+5. Using the red button the task can be removed from the list. 
+6. Clicking on button "mark all done" sets the status of all tasks to done.    The button is disabled if all tasks are marked as done. 
+7. Clicking on button "hide all done" toggles the status of all finished tasks to hidden. Clicking on it again shows the list.
