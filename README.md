@@ -27,6 +27,9 @@ https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 - React.js
 - Media query
 
+### Task List layout
+![Task list](https://raw.githubusercontent.com/Gosia-Ras/todo-list-react/main/public/task-list-screenshot.png)
+
 ### Instructions: 
 *For now it is not possible to use the buttons to perform those actions.*
 
