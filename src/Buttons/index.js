@@ -12,6 +12,7 @@ const Buttons = ({ tasks, hideAllDone }) => (
                     </button>
                     <button 
                         className="button button--section"
+                        autoFocus
                         disabled={tasks.every(({ done }) => done)}
                     >
                         Mark all done
