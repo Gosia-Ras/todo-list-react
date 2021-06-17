@@ -21,7 +21,7 @@ const Form = ({addNewTask}) => {
       />
       <button 
         className="button button--add"
-        disabled={newTaskContent === ""}
+        disabled={newTaskContent.trim() === ""}
       >
         Add new task</button>
     </form>
