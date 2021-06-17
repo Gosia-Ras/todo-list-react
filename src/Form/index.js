@@ -19,7 +19,11 @@ const Form = ({addNewTask}) => {
         placeholder="What do you have to do?"
         onChange={({ target} ) => setNewTaskContent(target.value)}
       />
-      <button className="button button--add">Add new task</button>
+      <button 
+        className="button button--add"
+        disabled={newTaskContent === ""}
+      >
+        Add new task</button>
     </form>
   );
 }
