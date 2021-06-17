@@ -9,13 +9,13 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
                     <button 
                         onClick={toggleHideDone} 
                         className={`button button--section`}
+                        disabled={!tasks.some(({ done }) => done)}
                     >
                     {hideDone ? "Show" : "Hide"} finished tasks
                     </button>
                     <button 
                         onClick={setAllDone}
                         className="button button--section"
-                        autoFocus
                         disabled={tasks.every(({ done }) => done)}
                     >
                         Mark all done
