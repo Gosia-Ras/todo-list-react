@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
@@ -10,7 +9,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
           task.done & hideDone ? " list__item--hidden" : ""
         }`}
       >
-        <button 
+        <button
           className="button button__list button__list--done"
           onClick={() => toggleTaskDone(task.id)}
         >
@@ -19,7 +18,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         <span className={`list__span${task.done ? " list__span--done" : ""}`}>
           {task.content}
         </span>
-        <button 
+        <button
           className="button button__list button__list--remove"
           onClick={() => removeTask(task.id)}
         >

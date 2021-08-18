@@ -6,6 +6,7 @@
 .button:hover {
     cursor: pointer;
 }
+
 .button--add {
     background-color: teal;
     color: rgb(230, 230, 230);
@@ -23,7 +24,7 @@
     outline: 2px solid black;
 }
 
-.button--section  {
+.button--section {
     background-color: transparent;
     color: hsl(180, 100%, 25%);
     transition: color 1s;

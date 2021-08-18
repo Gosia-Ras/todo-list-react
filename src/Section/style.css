@@ -22,7 +22,7 @@
     background-color: white;
 }
 
-.buttons{
+.buttons {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -32,4 +32,4 @@
     .buttons {
         grid-template-columns: 1fr;
     }
-} 
+}

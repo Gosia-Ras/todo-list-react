@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -18,29 +18,33 @@ function App() {
   };
 
   const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id));
-  }
+    setTasks((tasks) => tasks.filter((task) => task.id !== id));
+  };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if(task.id === id) {
-        return { ...task, done: !task.done };  
-      }
+    setTasks((tasks) =>
+      tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, done: !task.done };
+        }
 
-      return task;
-    }));
-  }
+        return task;
+      })
+    );
+  };
 
   const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({ 
-      ...task, 
-      done: true,
-     })));
+    setTasks((tasks) =>
+      tasks.map((task) => ({
+        ...task,
+        done: true,
+      }))
+    );
   };
 
   const addNewTask = (content) => {
-    setTasks(tasks => [
-      ...tasks, 
+    setTasks((tasks) => [
+      ...tasks,
       {
         content,
         done: false,
@@ -52,17 +56,15 @@ function App() {
   return (
     <Container>
       <Header title="To-Do List" />
-      <Section title="Add new task" body={
-      <Form addNewTask={addNewTask} />
-      } />
+      <Section title="Add new task" body={<Form addNewTask={addNewTask} />} />
       <Section
         title="Task list"
         body={
-          <Tasks 
-            tasks={tasks} 
-            hideDone={hideDone} 
+          <Tasks
+            tasks={tasks}
+            hideDone={hideDone}
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone} 
+            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
