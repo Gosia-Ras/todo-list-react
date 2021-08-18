@@ -22,14 +22,14 @@
     background-color: white;
 }
 
-.section__buttonsContainer{
+.buttons{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
-    .section__buttonsContainer {
+    .buttons {
         grid-template-columns: 1fr;
     }
 } 

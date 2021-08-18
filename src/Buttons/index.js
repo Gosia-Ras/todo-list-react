@@ -3,7 +3,7 @@ import "./style.css";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
     tasks.length > 0 && (
-        <div className="section__buttonsContainer">
+        <div className="buttons">
             {tasks.length > 0 && (
                 <>
                     <button 
