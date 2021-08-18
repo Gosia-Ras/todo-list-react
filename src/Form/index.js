@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./style.css";
 
-const Form = ({addNewTask}) => {
+const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
   const onFormSubmit = (event) => {
     event.preventDefault();
     addNewTask(newTaskContent.trim());
     setNewTaskContent("");
-  }
+  };
 
   return (
     <form className="form" onSubmit={onFormSubmit}>
@@ -17,15 +17,16 @@ const Form = ({addNewTask}) => {
         className="form__text"
         type="text"
         placeholder="What do you have to do?"
-        onChange={({ target} ) => setNewTaskContent(target.value)}
+        onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <button 
+      <button
         className="button button--add"
         disabled={newTaskContent.trim() === ""}
       >
-        Add new task</button>
+        Add new task
+      </button>
     </form>
   );
-}
+};
 
 export default Form;
