@@ -1,7 +1,8 @@
 # Task List in React
 
 Simple task list moved from vanilla JS into React.js 
-Funcionality of the app:
+
+Functionality of the app:
 - add tasks
 - mark tasks as done
 - remove tasks from the list
