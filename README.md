@@ -8,6 +8,8 @@ The app now does not have the functionality added. Soon it will be possible use 
 - mark all tasks as done
 - hide finished tasks
 
+Tasks input into the task list are stored using local storage.
+
 Project done as a part of front-end development course at YouCode.
 
 ## Demo: 
@@ -24,12 +26,13 @@ https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 - Grid 
 - React.js
 - Media query
+- local storage
 
 ### Task List layout
 ![Task list](https://raw.githubusercontent.com/Gosia-Ras/todo-list-react/main/public/task-list-screenshot.png)
 
 ### Instructions: 
-*For now it is not possible to use the buttons to perform those actions.*
+
 
 1. Type in the task in the input field.
 2. Click the "click to add" button.
