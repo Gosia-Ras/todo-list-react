@@ -12,10 +12,7 @@ function App() {
   const tasksLocalStorage = localStorage.getItem("tasks");
 
   const [tasks, setTasks] = useState(
-    tasksLocalStorage 
-    ? 
-    JSON.parse(tasksLocalStorage) 
-    : []
+    tasksLocalStorage ? JSON.parse(tasksLocalStorage) : []
   );
 
   useEffect(() => {
@@ -65,9 +62,7 @@ function App() {
   return (
     <Container>
       <Header title="To-Do List" />
-      <Section title="Add new task" body={
-      <Form addNewTask={addNewTask} />
-      } />
+      <Section title="Add new task" body={<Form addNewTask={addNewTask} />} />
       <Section
         title="Task list"
         body={
