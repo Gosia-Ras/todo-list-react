@@ -1,7 +1,8 @@
 # Task List in React
 
 Simple task list moved from vanilla JS into React.js 
-The app now does not have the functionality added. Soon it will be possible use the buttons to: 
+
+Functionality of the app:
 - add tasks
 - mark tasks as done
 - remove tasks from the list
@@ -32,7 +33,10 @@ https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 ![Task list](https://raw.githubusercontent.com/Gosia-Ras/todo-list-react/main/public/task-list-screenshot.png)
 
 ### Instructions: 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18ec546fd86f00326d81af6da8dc523545462cd1
 
 1. Type in the task in the input field.
 2. Click the "click to add" button.
