@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Button = styled.button`
   background-color: teal;
@@ -10,4 +10,20 @@ export const Button = styled.button`
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.1);
   }
+`;
+
+export const StyledForm = styled.form`
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 10px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const Input = styled.input`
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgb(220, 220, 220);
 `;
