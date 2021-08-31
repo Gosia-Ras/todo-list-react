@@ -1,27 +1,28 @@
 import "./style.css";
+import {Button, Section} from "./styled.js"
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
-    <div className="buttons">
+    <Section>
       {tasks.length > 0 && (
         <>
-          <button
+          <Button
             onClick={toggleHideDone}
-            className={`button button--section`}
             disabled={!tasks.some(({ done }) => done)}
+            secondary
           >
             {hideDone ? "Show" : "Hide"} finished tasks
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={setAllDone}
-            className="button button--section"
             disabled={tasks.every(({ done }) => done)}
+            secondary
           >
             Mark all done
-          </button>
+          </Button>
         </>
       )}
-    </div>
+    </Section>
   );
 
 export default Buttons;

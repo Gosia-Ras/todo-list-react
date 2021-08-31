@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import "./style.css";
+import { Button } from "./styled.js"
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -26,13 +27,12 @@ const Form = ({ addNewTask }) => {
         onChange={({ target }) => setNewTaskContent(target.value)}
         ref={inputRef}
       />
-      <button
-        className="button button--add"
+      <Button
         disabled={newTaskContent.trim() === ""}
         onClick={focusInput}
       >
         Add new task
-      </button>
+      </Button>
     </form>
   );
 };

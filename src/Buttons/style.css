@@ -1,49 +1,9 @@
-.button {
-    transition: background 1s;
-    border: none;
-}
-
-.button:hover {
-    cursor: pointer;
-}
-
-.button--add {
-    background-color: teal;
-    color: rgb(230, 230, 230);
-    padding: 10px;
-    transition: background 1s, transform 1s;
-}
-
-.button--add:hover {
-    background-color: hsl(180, 100%, 30%);
-    transform: scale(1.1);
-}
-
-.button--add:active {
-    background-color: hsl(180, 100%, 35%);
-    outline: 2px solid black;
-}
-
-.button--section {
-    background-color: transparent;
-    color: hsl(180, 100%, 25%);
-    transition: color 1s;
-    margin: 0 10px 0 0;
-}
 
 @media (max-width: 767px) {
     .button--section {
         padding-bottom: 15px;
         padding-top: 0;
     }
-}
-
-.button--section:hover {
-    color: hsl(180, 100%, 30%);
-}
-
-.button--section:disabled {
-    color: grey;
 }
 
 .button__list {
