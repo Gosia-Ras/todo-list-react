@@ -11,6 +11,13 @@ export const StyledLayout = styled.div`
   grid-template-columns: 1fr auto;
   padding: 0 0 0 15px;
   background-color: white;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+  }
 `;
 
 export const StyledSectionBody = styled.div`
