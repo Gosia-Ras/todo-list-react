@@ -20,7 +20,7 @@ https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 ## Tools: 
 
 - HTML
-- CSS
+- CSS + Styled Components
 - BEM
 - ES6+
 - Immutability principle
