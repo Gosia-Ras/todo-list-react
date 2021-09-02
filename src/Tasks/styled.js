@@ -35,6 +35,7 @@ export const Button = styled.button`
   width: 30px;
   height: 30px;
   color: white;
+  border: none;
 
   ${({ toggleDone }) =>
     toggleDone &&
@@ -54,7 +55,7 @@ export const Button = styled.button`
       transition: background 1s;
 
       &:hover {
-        background-color: hsl(357, 95%, 50%)
+        background-color: hsl(357, 95%, 50%);
       }
     `}
 `;
