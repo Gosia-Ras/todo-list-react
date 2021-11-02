@@ -33,7 +33,7 @@ export const Button = styled.button`
 
       &:disabled {
         color: grey;
-        cursor: none;
+        cursor: not-allowed;
       }
     `}
 `;
