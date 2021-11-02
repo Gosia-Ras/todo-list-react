@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 
 export const useTasks = () => {
-  const tasksLocalStorage = localStorage.getItem("tasks");
-
   const [tasks, setTasks] = useState(
-    tasksLocalStorage ? JSON.parse(tasksLocalStorage) : []
+    JSON.parse(localStorage.getItem("tasks")) || []
   );
 
   useEffect(() => {
