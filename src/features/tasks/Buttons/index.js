@@ -1,13 +1,16 @@
-import {Button, Section} from "./styled.js"
+import { Button, Section } from "./styled.js";
+import { useSelector, useDispatch } from "react-redux";
+import { selectTasks, toggleHideDone } from "../tasksSlice";
 
-const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
-  tasks.length > 0 && (
+const Buttons = ({ setAllDone }) => {
+  const { tasks, hideDone } = useSelector(selectTasks);
+  const dispatch = useDispatch();
+  return (
     <Section>
       {tasks.length > 0 && (
         <>
           <Button
-            onClick={toggleHideDone}
-            disabled={!tasks.some(({ done }) => done)}
+            onClick={ () => dispatch(toggleHideDone())}
             secondary
           >
             {hideDone ? "Show" : "Hide"} finished tasks
@@ -23,5 +26,6 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
       )}
     </Section>
   );
+};
 
 export default Buttons;
