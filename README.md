@@ -26,6 +26,7 @@ https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 - Immutability principle
 - Grid 
 - React.js
+- Redux (reducers, useSelector, useDispatch)
 - Media query
 - local storage
 
