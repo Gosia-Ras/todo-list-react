@@ -1,6 +1,14 @@
 import { Button, Section } from "./styled.js";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleHideDone, setAllDone, selectAreTasksEmpty, selectIsEveryTaskDone, selectHideDone, selectSomeTasksDone } from "../tasksSlice";
+import {
+  toggleHideDone,
+  setAllDone,
+  selectAreTasksEmpty,
+  selectIsEveryTaskDone,
+  selectHideDone,
+  selectSomeTasksDone,
+  fetchExampleTasks,
+} from "../tasksSlice";
 
 const Buttons = () => {
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -14,8 +22,11 @@ const Buttons = () => {
     <Section>
       {!areTasksEmpty > 0 && (
         <>
+          <Button onClick={() => dispatch(fetchExampleTasks())} secondary>
+            Get example tasks
+          </Button>
           <Button
-            onClick={ () => dispatch(toggleHideDone())}
+            onClick={() => dispatch(toggleHideDone())}
             disabled={!someTasksDone}
             secondary
           >
