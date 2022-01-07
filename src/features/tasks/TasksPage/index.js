@@ -5,6 +5,7 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
+import Search from "./Search";
 import { useDispatch } from "react-redux";
 import { fetchExampleTasks } from "../tasksSlice";
 
@@ -22,6 +23,10 @@ function TasksPage() {
           </Button>
         }
         body={<Form />}
+      />
+      <Section 
+        title="Search bar" 
+        body={<Search />} 
       />
       <Section
         title="Task list"
