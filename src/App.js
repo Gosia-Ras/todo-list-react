@@ -1,6 +1,5 @@
 import {
   HashRouter,
-  Link,
   Switch,
   Route,
   Redirect,
@@ -8,20 +7,21 @@ import {
 import AuthorPage from "./features/author/AuthorPage";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
+import { StyledNavLink } from "./styled";
 
 export default () => (
   <HashRouter>
     <nav>
       <ul>
         <li>
-          <Link exact to="/tasks">
+          <StyledNavLink exact to="/tasks">
             Tasks
-          </Link>
+          </StyledNavLink>
         </li>
         <li>
-          <Link exact to="/author">
+          <StyledNavLink exact to="/author">
             About me
-          </Link>
+          </StyledNavLink>
         </li>
       </ul>
       <Switch>
