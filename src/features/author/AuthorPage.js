@@ -10,16 +10,14 @@ export default () => (
       body={
         <>
           <p>
-            Cat mom &#128062; living in <strong>Switzerland</strong> with a goal
-            of becoming a <strong>front-end developer</strong>. I love food
-            &#127836; and becoming a cook will be my backup if coding doesn't
-            work out &#128521;.{" "}
+          &#128062; Cat mom living in <strong>Switzerland</strong> with a goal
+            of becoming a <strong>front-end developer</strong>. This project is a part of my course at <strong>YouCode</strong>.
           </p>
           <p>
             In my free time I play video games and like to dabble in{" "}
-            <em>smartphone photography</em> and post it on my Instagram account
-            @diary_of_gosia.
+            <em>smartphone photography</em> and post it on my IG 
           </p>
+          <span><a style={{textDecoration: 'none', color: 'black'}} href="https://www.instagram.com/diary_of_gosia/" rel="noopener noreferrer" target="_blank">@diary_of_gosia</a></span>
         </>
       }
     />
