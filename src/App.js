@@ -7,12 +7,12 @@ import {
 import AuthorPage from "./features/author/AuthorPage";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
-import { StyledNavLink } from "./styled";
+import { StyledNavigation, StyledNavLink } from "./styled";
 
 export default () => (
   <HashRouter>
     <nav>
-      <ul>
+      <StyledNavigation>
         <li>
           <StyledNavLink exact to="/tasks">
             Tasks
@@ -23,7 +23,7 @@ export default () => (
             About me
           </StyledNavLink>
         </li>
-      </ul>
+      </StyledNavigation>
       <Switch>
         <Route path="/tasks/:id">
           <TaskPage />
