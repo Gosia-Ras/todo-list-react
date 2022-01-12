@@ -5,6 +5,7 @@ export const Button = styled.button`
   color: rgb(230, 230, 230);
   padding: 10px;
   transition: background 1s, transform 1s;
+  border: none;
 
   &:hover {
     background-color: hsl(180, 100%, 30%);
