@@ -14,8 +14,12 @@ export const StyledNavLink = styled(NavLink)`
 export const StyledNavigation = styled.ul`
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: teal;
   padding: 15px;
   margin-top: 0;
+`;
+
+export const StyledNavigationItem = styled.li`
+  margin: 10px;
 `;

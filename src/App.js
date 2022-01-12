@@ -1,28 +1,27 @@
-import {
-  HashRouter,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import AuthorPage from "./features/author/AuthorPage";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
-import { StyledNavigation, StyledNavLink } from "./styled";
+import {
+  StyledNavigation,
+  StyledNavigationItem,
+  StyledNavLink,
+} from "./styled";
 
 export default () => (
   <HashRouter>
     <nav>
       <StyledNavigation>
-        <li>
+        <StyledNavigationItem>
           <StyledNavLink exact to="/tasks">
             Tasks
           </StyledNavLink>
-        </li>
-        <li>
+        </StyledNavigationItem>
+        <StyledNavigationItem>
           <StyledNavLink exact to="/author">
             About me
           </StyledNavLink>
-        </li>
+        </StyledNavigationItem>
       </StyledNavigation>
       <Switch>
         <Route path="/tasks/:id">

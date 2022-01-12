@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   background-color: white;
@@ -19,6 +20,15 @@ export const Item = styled.li`
     css`
       display: none;
     `};
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: teal;
+  }
 `;
 
 export const Span = styled.span`
@@ -45,7 +55,7 @@ export const Button = styled.button`
 
       &:hover {
         background-color: hsl(120, 100%, 35%);
-        cursor: pointer
+        cursor: pointer;
       }
     `}
 
@@ -57,7 +67,7 @@ export const Button = styled.button`
 
       &:hover {
         background-color: hsl(357, 95%, 50%);
-        cursor: pointer
+        cursor: pointer;
       }
     `}
 `;
