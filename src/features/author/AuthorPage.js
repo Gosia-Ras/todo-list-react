@@ -1,6 +1,7 @@
 import Container from "../../common/Container";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
+import { LinkIG } from "./styled";
 
 export default () => (
   <Container>
@@ -17,7 +18,7 @@ export default () => (
             In my free time I play video games and like to dabble in{" "}
             <em>smartphone photography</em> and post it on my IG 
           </p>
-          <span><a style={{textDecoration: 'none', color: 'black'}} href="https://www.instagram.com/diary_of_gosia/" rel="noopener noreferrer" target="_blank">@diary_of_gosia</a></span>
+          <LinkIG href="https://www.instagram.com/diary_of_gosia/" rel="noopener noreferrer" target="_blank">@diary_of_gosia</LinkIG>
         </>
       }
     />
