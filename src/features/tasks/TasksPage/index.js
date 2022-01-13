@@ -1,4 +1,3 @@
-import { Button } from "./Buttons/styled";
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
@@ -9,7 +8,6 @@ import Search from "./Search";
 import ExampleTasksButton from "./ExampleTasksButton";
 
 function TasksPage() {
-
   return (
     <Container>
       <Header title="To-Do List" />

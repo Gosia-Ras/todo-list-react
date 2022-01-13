@@ -3,7 +3,7 @@ import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../tasksSlice.js";
 import { Button, StyledForm } from "./styled.js";
-import Input from "../../Input/index.js";
+import Input from "../Input/index";
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
