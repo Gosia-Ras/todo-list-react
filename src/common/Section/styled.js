@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   display: grid;
-  grid-template-rows: auto minmax(50px, 1fr);
+  height: fit-content;
   grid-gap: 5px;
 `;
 
@@ -11,6 +11,7 @@ export const StyledLayout = styled.div`
   grid-template-columns: 1fr auto;
   padding: 0 0 0 15px;
   background-color: white;
+  border-bottom: 1px solid rgb(230, 230, 230);
 
   @media (max-width: 767px) {
     display: flex;
@@ -23,4 +24,5 @@ export const StyledLayout = styled.div`
 export const StyledSectionBody = styled.div`
   padding: 20px;
   background-color: white;
+  border-bottom: 1px solid rgb(230, 230, 230);
 `;

@@ -9,20 +9,22 @@ import ExampleTasksButton from "./ExampleTasksButton";
 
 function TasksPage() {
   return (
-    <Container>
-      <Header title="To-Do List" />
-      <Section
-        title="Add new task"
-        extraHeaderContent={<ExampleTasksButton />}
-        body={<Form />}
-      />
-      <Section title="Search bar" body={<Search />} />
-      <Section
-        title="Task list"
-        body={<TaskList />}
-        extraHeaderContent={<Buttons />}
-      />
-    </Container>
+    <>
+      <Container>
+        <Header title="To-Do List" />
+        <Section
+          title="Add new task"
+          extraHeaderContent={<ExampleTasksButton />}
+          body={<Form />}
+        />
+        <Section title="Search bar" body={<Search />} />
+        <Section
+          title="Task list"
+          body={<TaskList />}
+          extraHeaderContent={<Buttons />}
+        />
+      </Container>
+    </>
   );
 }
 
