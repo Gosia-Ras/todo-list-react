@@ -1,12 +1,12 @@
 [
     {
-        "content": "finish all tasks",
+        "content": "Finish all tasks",
         "done": false,
-        "id": "Vw7lIf7-3r6wVb3ViZXK9"
+        "id": "1"
     },
     {
-        "content": "mark all tasks as finished",
+        "content": "Mark all tasks as finished",
         "done": false,
-        "id": "cXkuAh8_4yCIymIkWOD9w"
+        "id": "2"
     }
 ]
