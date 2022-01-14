@@ -37,9 +37,9 @@ const tasksSlice = createSlice({
       state.tasks = tasks;
     },
     addExampleTasks: (state, { payload: newTasks }) => {
-      newTasks.forEach(task => state.tasks.push(task));
+      newTasks.forEach((task) => state.tasks.push(task));
       state.isLoading = false;
-  },
+    },
   },
 });
 

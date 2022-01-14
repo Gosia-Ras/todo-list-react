@@ -1,7 +1,8 @@
 import {
   StyledNavigation,
   StyledNavigationItem,
-  StyledNavLink } from "./styled"
+  StyledNavLink,
+} from "./styled";
 
 export const Navigation = () => (
   <nav>

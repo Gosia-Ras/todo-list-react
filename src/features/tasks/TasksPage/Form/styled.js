@@ -10,7 +10,7 @@ export const Button = styled.button`
   &:hover {
     background-color: hsl(180, 100%, 30%);
     transform: scale(1.1);
-    cursor: pointer
+    cursor: pointer;
   }
 `;
 

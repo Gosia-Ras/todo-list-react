@@ -1,8 +1,8 @@
-let key = 0
+let key = 0;
 
 const getKey = () => {
-    key += 1
-    return key.toString()
-}
+  key += 1;
+  return key.toString();
+};
 
-export default getKey
+export default getKey;
