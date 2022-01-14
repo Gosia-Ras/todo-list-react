@@ -1,9 +1,9 @@
 import { useState, useRef } from "react";
-import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../tasksSlice.js";
 import { Button, StyledForm } from "./styled.js";
 import Input from "../Input/index";
+import getKey from "../../keyGenerator.js";
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -29,7 +29,7 @@ const Form = () => {
       addTask({
         content: trimmedNewTaskContent,
         done: false,
-        id: nanoid(),
+        id: getKey(),
       })
     );
     setNewTaskContent("");

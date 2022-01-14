@@ -8,10 +8,10 @@ import {
 } from "redux-saga/effects";
 import { getExampleTasks } from "./getExampleTasks";
 import {
-  addExampleTasks,
   fetchExampleTasks,
   fetchExampleTasksError,
-  selectTasks,
+  fetchExampleTasksSuccess,
+  selectTasks
 } from "./tasksSlice";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 import getKey from "./keyGenerator";
@@ -24,7 +24,7 @@ function* fetchExampleTasksHandler() {
       ...task,
       id: getKey(),
     }));
-    yield put(addExampleTasks(exampleTasksWithNewIds));
+    yield put(fetchExampleTasksSuccess(exampleTasksWithNewIds));
   } catch (error) {
     yield put(fetchExampleTasksError());
     yield call(alert, "Something went wrong");
