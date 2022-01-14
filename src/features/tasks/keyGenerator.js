@@ -1,8 +1,9 @@
-let key = 0;
+import { nanoid } from "@reduxjs/toolkit";
 
 const getKey = () => {
-  key += 1;
-  return key.toString();
+  let key = nanoid();
+
+  return key;
 };
 
 export default getKey;
