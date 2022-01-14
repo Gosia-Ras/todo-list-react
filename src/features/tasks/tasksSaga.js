@@ -14,7 +14,7 @@ import {
   selectTasks,
 } from "./tasksSlice";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
-import { nanoid } from "@reduxjs/toolkit";
+import getKey from "./keyGenerator";
 
 function* fetchExampleTasksHandler() {
   try {
@@ -22,7 +22,7 @@ function* fetchExampleTasksHandler() {
     const exampleTasks = yield call(getExampleTasks);
     const exampleTasksWithNewIds = exampleTasks.map((task) => ({
       ...task,
-      id: nanoid(),
+      id: getKey(),
     }));
     yield put(addExampleTasks(exampleTasksWithNewIds));
   } catch (error) {
