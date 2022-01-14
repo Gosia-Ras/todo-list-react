@@ -6,6 +6,7 @@ import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
 import ExampleTasksButton from "./ExampleTasksButton";
+import { RemainingTasksCount } from "../tasksRemaining";
 
 function TasksPage() {
   return (
@@ -18,6 +19,7 @@ function TasksPage() {
           body={<Form />}
         />
         <Section title="Search bar" body={<Search />} />
+        <Section body={RemainingTasksCount()} />
         <Section
           title="Task list"
           body={<TaskList />}

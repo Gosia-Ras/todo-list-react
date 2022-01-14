@@ -6,7 +6,7 @@ const Section = ({ title, body, extraHeaderContent }) => (
       <h2>{title}</h2>
       {extraHeaderContent}
     </StyledLayout>
-    <StyledSectionBody>{body}</StyledSectionBody>
+    <StyledSectionBody taskcount>{body}</StyledSectionBody>
   </StyledSection>
 );
 

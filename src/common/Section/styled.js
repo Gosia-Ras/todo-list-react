@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledSection = styled.section`
   display: grid;
@@ -25,4 +25,8 @@ export const StyledSectionBody = styled.div`
   padding: 20px;
   background-color: white;
   border-bottom: 1px solid rgb(230, 230, 230);
+`;
+
+export const SectionParagraph = styled.p`
+  text-align: end;
 `;
