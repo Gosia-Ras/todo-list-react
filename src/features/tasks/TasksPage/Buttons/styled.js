@@ -22,16 +22,16 @@ export const Button = styled.button`
     secondary &&
     css`
       background-color: transparent;
-      color: hsl(180, 100%, 25%);
+      color: ${({ theme }) => theme.color.primary};
       transition: color 1s;
       margin: 0 10px 0 0;
 
       &:hover {
-        color: hsl(180, 100%, 30%);
+        color: ${({ theme }) => theme.button.primaryHover};
       }
 
       &:disabled {
-        color: grey;
+        color: ${({ theme }) => theme.button.disabled};
         cursor: not-allowed;
       }
     `}

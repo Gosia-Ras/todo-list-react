@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
-  color: white;
+  color: ${({ theme }) => theme.color.quaternary};
   font-size: larger;
 
   &.active {
@@ -15,7 +15,7 @@ export const StyledNavigation = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: center;
-  background-color: teal;
+  background-color: ${({ theme }) => theme.color.primary};
   padding: 15px;
   margin-top: 0;
 `;

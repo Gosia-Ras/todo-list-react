@@ -4,7 +4,7 @@ import Section from "../../common/Section";
 import { LinkIG } from "./styled";
 
 export default () => (
-  <Container secondary>
+  <Container>
     <Header title="About me" />
     <Section
       title="Gosia Ras"

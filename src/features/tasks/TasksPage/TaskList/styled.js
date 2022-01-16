@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const List = styled.ul`
-  background-color: white;
+  background-color: ${({ theme }) => theme.color.quarternary};
   list-style: none;
   padding: 0;
 `;
@@ -13,7 +13,7 @@ export const Item = styled.li`
   align-items: center;
   grid-gap: 10px;
   padding: 10px;
-  border-bottom: 1px solid rgb(218, 218, 218);
+  border-bottom: 1px solid ${({ theme }) => theme.color.secondary};
 
   ${({ hidden }) =>
     hidden &&
@@ -24,10 +24,10 @@ export const Item = styled.li`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: ${({ theme }) => theme.color.tertiary};
 
   &:hover {
-    color: teal;
+    color: ${({ theme }) => theme.color.primary};
   }
 `;
 
@@ -50,11 +50,11 @@ export const Button = styled.button`
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: hsl(120, 100%, 25%);
+      background-color: ${({ theme }) => theme.button.complete};
       transition: background 1s;
 
       &:hover {
-        background-color: hsl(120, 100%, 35%);
+        background-color: ${({ theme }) => theme.button.hoverGreen};
         cursor: pointer;
       }
     `}
@@ -62,11 +62,11 @@ export const Button = styled.button`
   ${({ remove }) =>
     remove &&
     css`
-      background-color: rgb(210, 5, 15);
+      background-color: ${({ theme }) => theme.button.remove};
       transition: background 1s;
 
       &:hover {
-        background-color: hsl(357, 95%, 50%);
+        background-color: ${({ theme }) => theme.button.hoverRed};
         cursor: pointer;
       }
     `}
