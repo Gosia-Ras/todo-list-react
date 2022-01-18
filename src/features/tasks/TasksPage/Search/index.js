@@ -4,7 +4,7 @@ import Input from "../Input/index";
 import { Wrapper } from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
 
-export default () => {
+export const Search = () => {
   const location = useLocation();
   const history = useHistory();
   const query = new URLSearchParams(location.search).get(searchQueryParamName);

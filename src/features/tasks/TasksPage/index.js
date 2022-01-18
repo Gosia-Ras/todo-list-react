@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
-import Search from "./Search";
+import { Search } from "./Search";
 import ExampleTasksButton from "./ExampleTasksButton";
 import { RemainingTasksCounter } from "../remainingTasksCounter";
 

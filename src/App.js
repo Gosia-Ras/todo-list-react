@@ -1,11 +1,11 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import AuthorPage from "../src/features/author/AuthorPage";
+import { AuthorPage } from "../src/features/author/AuthorPage";
 import TasksPage from "../src/features/tasks/TasksPage/index";
 import TaskPage from "../src/features/tasks/TaskPage/index";
 import { Navigation } from "./features/navigation";
 import Footer from "./common/Footer";
 
-export default () => (
+export const App = () => (
   <>
     <HashRouter>
       <Navigation />
@@ -24,6 +24,6 @@ export default () => (
         </Route>
       </Switch>
     </HashRouter>
-    <Footer title="Coded in 2022 by Gosia Ras"/>
+    <Footer title="Coded in 2022 by Gosia Ras" />
   </>
 );

@@ -3,7 +3,7 @@ import Header from "../../common/Header";
 import Section from "../../common/Section";
 import { LinkIG } from "./styled";
 
-export default () => (
+export const AuthorPage = () => (
   <Container>
     <Header title="About me" />
     <Section
