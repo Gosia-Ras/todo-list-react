@@ -21,7 +21,7 @@ function TaskPage() {
               <strong>Completed:</strong> {task.done ? "Yes" : "No"}
             </p>
             <p>
-              <strong>ID: </strong>
+              <strong>Task number: </strong>
               {tasks.indexOf(task) + 1}
             </p>
           </>
