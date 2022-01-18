@@ -1,45 +1,43 @@
-# Task List in React
+# &#128221; Task List in React
 
-Simple task list moved from vanilla JS into React.js 
+Simple task created using React. Previously coded in JavaScript. 
 
-Functionality of the app:
-- add tasks
-- mark tasks as done
-- remove tasks from the list
-- mark all tasks as done
-- hide finished tasks
+ &#128311; The app consists of three main blocks: 
+* Task List where you can:
+  - add tasks yourself or fetch example tasks
+  - mark one or all tasks as done &#9989;
+  - remove tasks from the list
+  - hide finished tasks
+  - display how many tasks need to be completed
+  - filter tasks using the search bar &#128269;
+* Task Page that can be viewed when clicking on task name: 
+  - it displays the name of the task, completion state and ID number on the list
+* Author Page where you can read my short introduction
+  
 
 Tasks input into the task list are stored using local storage.
 
 Project done as a part of front-end development course at YouCode.
 
-## Demo: 
+## &#127910; Demo: 
 
 https://gosia-ras.github.io/todo-list-react/ <- click here to see how it works
 
-## Tools: 
+## &#128311; Tools: 
 
-- HTML
-- CSS + Styled Components
-- BEM
+- Styled-components
+- RWD
 - ES6+
 - Immutability principle
 - Grid 
-- React.js
-- Redux (reducers, useSelector, useDispatch)
+- React - Redux / Toolkit
+- custom Hooks
+- Redux-Saga
+- React Router
 - Media query
 - local storage
+- ThemeProvider
 
-### Task List layout
+### &#128311; Task List layout
 ![Task list](https://raw.githubusercontent.com/Gosia-Ras/todo-list-react/main/public/task-list-screenshot.png)
 
-### Instructions: 
-
-1. Type in the task in the input field.
-2. Click the "click to add" button.
-3. The task will appear in the list below the input field. 
-4. Using the green button the task can be marked as done. 
-5. Using the red button the task can be removed from the list. 
-6. If any task is entered into the list, two buttons appear: to mark all tasks as done, and to hide all tasks marked as done. If all tasks are marked as complete, the mark all button is disabled.
-7. Clicking on button "mark all done" sets the status of all tasks to done.    The button is disabled if all tasks are marked as done. 
-8. Clicking on button "hide all done" toggles the status of all finished tasks to hidden. Clicking on it again shows the list.
