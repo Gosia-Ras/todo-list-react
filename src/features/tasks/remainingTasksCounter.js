@@ -9,7 +9,7 @@ export const RemainingTasksCounter = () => {
 
   useEffect(() => {
     if (tasks) setTasksRemaining(tasks.filter((task) => !task.done).length);
-  });
+  }, [tasks]);
 
   return (
     <SectionParagraph>
