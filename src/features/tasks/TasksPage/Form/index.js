@@ -4,6 +4,7 @@ import { addTask } from "../../tasksSlice.js";
 import { Button, StyledForm } from "./styled.js";
 import Input from "../Input/index";
 import getKey from "../../keyGenerator.js";
+import { displayTimeTaskAdded } from "../../displayTimeTaskAdded.js";
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -13,16 +14,6 @@ const Form = () => {
   const focusInput = () => {
     inputRef.current.focus();
   };
-
-  const date = new Date();
-  const formattedDate = date.toLocaleDateString("en-GB", {
-    weekday: "long",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    day: "numeric",
-    month: "long",
-  });
 
   const dispatch = useDispatch();
 
@@ -40,7 +31,7 @@ const Form = () => {
         content: trimmedNewTaskContent,
         done: false,
         id: getKey(),
-        time: formattedDate,
+        time: displayTimeTaskAdded(),
       })
     );
     setNewTaskContent("");
