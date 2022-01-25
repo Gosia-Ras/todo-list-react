@@ -14,6 +14,16 @@ const Form = () => {
     inputRef.current.focus();
   };
 
+  const date = new Date();
+  const formattedDate = date.toLocaleDateString("en-GB", {
+    weekday: "long",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    day: "numeric",
+    month: "long",
+  });
+
   const dispatch = useDispatch();
 
   const onFormSubmit = (event) => {
@@ -30,6 +40,7 @@ const Form = () => {
         content: trimmedNewTaskContent,
         done: false,
         id: getKey(),
+        time: formattedDate,
       })
     );
     setNewTaskContent("");

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById, selectTasks } from "../tasksSlice";
 
+
 function TaskPage() {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
@@ -24,6 +25,7 @@ function TaskPage() {
               <strong>Task number: </strong>
               {tasks.indexOf(task) + 1}
             </p>
+            <p><strong>Task added on:</strong> {task.time}</p>
           </>
         }
       />
