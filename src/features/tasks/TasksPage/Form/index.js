@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { addTask } from "../../tasksSlice.js";
 import { Button, StyledForm } from "./styled.js";
 import Input from "../Input/index";
-import getKey from "../../keyGenerator.js";
+import { nanoid } from "@reduxjs/toolkit";
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -31,7 +31,7 @@ const Form = () => {
       addTask({
         content: trimmedNewTaskContent,
         done: false,
-        id: getKey(),
+        id: nanoid(),
         time: date.toLocaleDateString("en-GB", {
           weekday: "long",
           hour: "2-digit",
