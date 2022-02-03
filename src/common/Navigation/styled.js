@@ -9,6 +9,10 @@ export const StyledNavLink = styled(NavLink)`
   &.active {
     font-weight: bold;
   }
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const StyledNavigation = styled.ul`
