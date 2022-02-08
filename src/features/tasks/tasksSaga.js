@@ -27,7 +27,7 @@ function* fetchExampleTasksHandler() {
     yield put(fetchExampleTasksSuccess(exampleTasksWithNewIds));
   } catch (error) {
     yield put(fetchExampleTasksError());
-    yield call(alert, "Something went wrong");
+    yield call(alert, "Ooops, looks like we can't load it. Please check your internet connection :)");
   }
 }
 
