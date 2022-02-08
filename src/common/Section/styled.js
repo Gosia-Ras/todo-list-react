@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledSection = styled.section`
   display: grid;
@@ -22,10 +22,6 @@ export const StyledLayout = styled.div`
 export const StyledSectionBody = styled.div`
   padding: 20px;
   background-color: ${({ theme }) => theme.color.quaternary};
-`;
-
-export const SectionHeader = styled.h2`
-  
 `;
 
 export const SectionParagraph = styled.p`
