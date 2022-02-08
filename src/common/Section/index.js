@@ -1,9 +1,9 @@
-import { StyledLayout, StyledSection, StyledSectionBody } from "./styled.js";
+import { StyledLayout, StyledSection, StyledSectionBody, SectionHeader } from "./styled.js";
 
 const Section = ({ title, body, extraHeaderContent }) => (
   <StyledSection>
     <StyledLayout>
-      <h2>{title}</h2>
+      <SectionHeader>{title}</SectionHeader>
       {extraHeaderContent}
     </StyledLayout>
     <StyledSectionBody taskcount>{body}</StyledSectionBody>

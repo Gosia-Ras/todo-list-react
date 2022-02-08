@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   display: grid;
-  height: fit-content;
-  grid-gap: 5px;
 `;
 
 export const StyledLayout = styled.div`
@@ -11,7 +9,7 @@ export const StyledLayout = styled.div`
   grid-template-columns: 1fr auto;
   padding: 0 0 0 15px;
   background-color: ${({ theme }) => theme.color.quaternary};
-  border-bottom: 1px solid ${({ theme }) => theme.color.secondary};
+  border-top: 1px solid ${({ theme }) => theme.color.secondary};
 
   @media (max-width: 767px) {
     display: flex;
@@ -24,7 +22,10 @@ export const StyledLayout = styled.div`
 export const StyledSectionBody = styled.div`
   padding: 20px;
   background-color: ${({ theme }) => theme.color.quaternary};
-  border-bottom: 1px solid ${({ theme }) => theme.color.secondary};
+`;
+
+export const SectionHeader = styled.h2`
+  
 `;
 
 export const SectionParagraph = styled.p`

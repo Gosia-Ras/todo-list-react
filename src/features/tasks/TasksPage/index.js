@@ -18,7 +18,7 @@ function TasksPage() {
           extraHeaderContent={<ExampleTasksButton />}
           body={<Form />}
         />
-        <Section title="Search bar" body={<Search />} />
+        <Section title="Search tasks" body={<Search />} />
         <Section body={RemainingTasksCounter()} />
         <Section
           title="Task list"
