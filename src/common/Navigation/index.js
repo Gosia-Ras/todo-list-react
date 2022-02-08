@@ -1,3 +1,4 @@
+import { toAuthor, toTasks } from "../../routes";
 import {
   StyledNavigation,
   StyledNavigationItem,
@@ -8,12 +9,12 @@ export const Navigation = () => (
   <nav>
     <StyledNavigation>
       <StyledNavigationItem>
-        <StyledNavLink exact to="/tasks">
+        <StyledNavLink exact to={toTasks()}>
           Tasks
         </StyledNavLink>
       </StyledNavigationItem>
       <StyledNavigationItem>
-        <StyledNavLink exact to="/author">
+        <StyledNavLink exact to={toAuthor()}>
           About me
         </StyledNavLink>
       </StyledNavigationItem>

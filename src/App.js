@@ -4,23 +4,24 @@ import TasksPage from "../src/features/tasks/TasksPage/index";
 import TaskPage from "../src/features/tasks/TaskPage/index";
 import { Navigation } from "./common/Navigation";
 import Footer from "./common/Footer";
+import { toAuthor, toTask, toTasks } from "./routes";
 
 export const App = () => (
   <>
     <HashRouter>
       <Navigation />
       <Switch>
-        <Route path="/tasks/:id">
+        <Route path={toTask()}>
           <TaskPage />
         </Route>
-        <Route path="/tasks">
+        <Route path={toTasks()}>
           <TasksPage />
         </Route>
-        <Route path="/author">
+        <Route path={toAuthor}>
           <AuthorPage />
         </Route>
-        <Route path="/">
-          <Redirect to="/tasks" />
+        <Route>
+          <Redirect to={toTasks()} />
         </Route>
       </Switch>
     </HashRouter>
