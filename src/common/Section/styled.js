@@ -29,5 +29,7 @@ export const SectionHeader = styled.h2`
 `;
 
 export const SectionParagraph = styled.p`
-  text-align: end;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 `;

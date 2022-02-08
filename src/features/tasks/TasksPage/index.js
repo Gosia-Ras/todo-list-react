@@ -19,7 +19,7 @@ function TasksPage() {
           body={<Form />}
         />
         <Section title="Search tasks" body={<Search />} />
-        <Section body={RemainingTasksCounter()} />
+        <Section title="Task counter"body={RemainingTasksCounter()} />
         <Section
           title="Task list"
           body={<TaskList />}
