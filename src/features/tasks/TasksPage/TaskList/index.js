@@ -8,6 +8,7 @@ import {
 } from "../../tasksSlice";
 import { useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName.js";
+import { toTask } from "../../../../routes.js";
 
 const TaskList = () => {
   const location = useLocation();
@@ -26,7 +27,9 @@ const TaskList = () => {
             {task.done ? "✔" : ""}
           </Button>
           <Span done={task.done}>
-            <StyledLink to={`/tasks/${task.id}`}>{task.content}</StyledLink>
+            <StyledLink to={toTask({ id: task.id })}>
+              {task.content}
+            </StyledLink>
           </Span>
           <Button onClick={() => dispatch(removeTask(task.id))} remove>
             🗑
