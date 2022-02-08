@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById, selectTasks } from "../tasksSlice";
 
-
 function TaskPage() {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
@@ -15,18 +14,23 @@ function TaskPage() {
     <Container>
       <Header title="Task details" />
       <Section
-        title={task ? task.content : "Task not found"}
+        title={task ? task.content : "Task not found 🧭 Please come back later"}
         body={
-          <>
-            <p>
-              <strong>Completed:</strong> {task.done ? "Yes" : "No"}
-            </p>
-            <p>
-              <strong>Task number: </strong>
-              {tasks.indexOf(task) + 1}
-            </p>
-            <p><strong>Task added on:</strong> {task.time}</p>
-          </>
+          !!task && (
+            <>
+              <p>
+                <strong>Completed:</strong> {task.done ? "Yes" : "No"}
+              </p>
+              <p>
+                <strong>Task number: </strong>
+                {tasks.indexOf(task) + 1}
+              </p>
+              <p>
+                <strong>Task added on:</strong>
+                {task.time}
+              </p>
+            </>
+          )
         }
       />
     </Container>
