@@ -1,14 +1,14 @@
 const colorNames = {
-  teal: "#008080",
-  persianGreen: "#029797",
+  teal: "#0FA39C",
+  persianGreen: "#2bcbba",
   white: "#FFFFFF",
-  funGreen: "#2DD22D",
-  salem: "#15B508",
-  pomegranateRed: "#ED0717",
-  redOrange: "#FA2E3C",
-  grey: "#DEDEDE",
-  black: "#130A06",
-  mercuryGray: "#E5E5E5",
+  funGreen: "#20bf6b",
+  salem: "#26de81",
+  pomegranateRed: "#eb3b5a",
+  redOrange: "#fc5c65",
+  grey: "#F5F5F5",
+  black: "#292319",
+  mercuryGray: "#c0c2c5",
 };
 
 export const theme = {
@@ -18,7 +18,6 @@ export const theme = {
     tertiary: colorNames.black,
     quaternary: colorNames.white,
     primaryHover: colorNames.persianGreen,
-    background: colorNames.mercuryGray,
   },
   button: {
     complete: colorNames.salem,

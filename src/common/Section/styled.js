@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const StyledSection = styled.section`
   display: grid;
@@ -10,6 +10,7 @@ export const StyledLayout = styled.div`
   padding: 0 0 0 15px;
   background-color: ${({ theme }) => theme.color.quaternary};
   border-top: 1px solid ${({ theme }) => theme.color.secondary};
+  border-bottom: 1px solid ${({ theme }) => theme.color.secondary};
 
   @media (max-width: 767px) {
     display: flex;
@@ -25,6 +26,8 @@ export const StyledSectionBody = styled.div`
 `;
 
 export const SectionParagraph = styled.p`
+  font-size: 19px;
+  padding: 0;
   @media (max-width: 767px) {
     text-align: center;
   }
